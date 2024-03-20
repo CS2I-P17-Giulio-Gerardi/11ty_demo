@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Accueil",
+    "url": "/",
+    "icon": "/images/maison.svg"
+  },
+  {
+    "label": "Syntaxe de base",
+    "url": "/syntaxe/",
+    "icon": "/images/document-signe.svg"
+  },
+  {
+    "label": "Titres",
+    "url": "/titres/",
+    "icon": "/images/editer.svg"
+  },
+  {
+    "label": "Listes",
+    "url": "/listes/",
+    "icon": "/images/liste.svg"
+  },
+  {
+    "label": "Images",
+    "url": "/images/",
+    "icon": "/images/image.svg"
+  },
+  {
+    "label": "Code",
+    "url": "/code/",
+    "icon": "/images/code-carre.svg"
+  },
+  {
+    "label": "Années",
+    "url": "/annee/janvier/",
+    "icon": "/images/calendrier.svg"
+  }
+]
