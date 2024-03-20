@@ -1,3 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-8xl text-yellow-500  mb-10 border-b-4 border-b-white pb-4;
+  font-family: Honk;
+}
+
+h2 {
+  @apply text-3xl text-gray-200 ml-4 my-3 p-3 font-bold;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  @apply text-2xl text-white ml-4 p-3 font-bold;
+}
+
+p {
+  @apply text-white ml-4;
+}
+
+li {
+  @apply text-white list-disc ml-10;
+}
+
+ul {
+  @apply text-white;
+}
+
+blockquote {
+  @apply shadow bg-slate-600 m-3 p-3 border-l-8 border-l-blue-400 rounded italic;
+}
+
+body {
+  @apply flex flex-row;
+}
+
+nav {
+  @apply w-16
+   xl:w-52
+    bg-slate-950 
+    justify-center 
+    min-h-screen;
+}
+
+nav > ul > li {
+  @apply text-lg 
+  xl:bg-slate-700 
+  text-purple-400 
+  list-none 
+  xl:mx-6
+  my-1
+  mx-0
+  rounded 
+  font-bold
+  hover:bg-yellow-500
+  hover:text-white;
+}
+nav > ul > li > a > span {
+  @apply hidden 
+  xl:block
+  xl:p-2
+  xl:ps-4;
+}
+nav > ul > li > a > img {
+  @apply justify-self-center
+  w-16
+  p-2
+  xl:hidden;
+}
+
+main {
+  @apply grow m-4;
+}
+
+@font-face {
+  font-family: Honk;
+  src: url("/fonts/honk-regular-webfont.woff2");
+}
+
+.logo-filter {
+  filter: invert(15%) sepia(89%) saturate(2000%) hue-rotate(263deg)
+    brightness(125%) contrast(93%);
+}
+
+.icon-filter {
+  filter: invert(50%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+pre {
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+}

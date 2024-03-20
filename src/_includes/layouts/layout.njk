@@ -10,9 +10,11 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+  <body class="bg-slate-700">
     <nav>{% include "partials/menu.njk"%}</nav>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+    <main>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
   </body>
 </html>

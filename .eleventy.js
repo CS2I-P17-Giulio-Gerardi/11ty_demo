@@ -3,8 +3,11 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
-  // Images
+  // Référencement du dossier d'images
   eleventyConfig.addPassthroughCopy("src/images");
+
+  // Référencement du dossier de fonts
+  eleventyConfig.addPassthroughCopy("src/fonts");
 
   eleventyConfig.addPlugin(syntaxHighlight);
 

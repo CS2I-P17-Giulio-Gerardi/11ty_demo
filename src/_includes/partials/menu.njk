@@ -1,8 +1,40 @@
+<div class="size-16 p-2 {% if page.url == '/' %} bg-slate-400 {% endif %}">
+  <a href="/">
+    <img class="icon-filter" src="/images/maison.svg" alt="" />
+  </a>
+</div>
+
+{{ page.url }}
+
 <ul>
-  <li><a href="/">Accueil</a></li>
-  <li><a href="/syntaxe/">Syntaxe de base</a></li>
-  <li><a href="/titres/">Titres</a></li>
-  <li><a href="/listes/">Listes</a></li>
-  <li><a href="/images/">Images</a></li>
-  <li><a href="/code/">Code</a></li>
+  <li class="{% if page.url == '/syntaxe/' %} bg-slate-400 {% endif %}">
+    <a href="/syntaxe/"
+      ><span>Syntaxe de base</span
+      ><img class="icon-filter" src="/images/document-signe.svg" alt=""
+    /></a>
+  </li>
+  <li class="{% if page.url == '/titres/' %} bg-slate-400 {% endif %}">
+    <a href="/titres/"
+      ><span>Titres</span
+      ><img class="icon-filter" src="/images/editer.svg" alt=""
+    /></a>
+  </li>
+  <li class="{% if page.url == '/listes/' %} bg-slate-400 {% endif %}">
+    <a href="/listes/"
+      ><span>Listes</span
+      ><img class="icon-filter" src="/images/liste.svg" alt=""
+    /></a>
+  </li>
+  <li class="{% if page.url == '/images/' %} bg-slate-400 {% endif %}">
+    <a href="/images/"
+      ><span>Images</span
+      ><img class="icon-filter" src="/images/image.svg" alt=""
+    /></a>
+  </li>
+  <li class="{% if page.url == '/code/' %} bg-slate-400 {% endif %}">
+    <a href="/code/"
+      ><span>Code</span
+      ><img class="icon-filter" src="/images/code-carre.svg" alt=""
+    /></a>
+  </li>
 </ul>
