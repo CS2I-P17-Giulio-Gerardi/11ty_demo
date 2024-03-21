@@ -1,0 +1,22 @@
+---
+title: Pvgis
+permalink: /pvgis/
+layout: layouts/layout.njk
+---
+
+<table class="table-fixed text-white">
+  <thead>
+    <tr>
+      <th class="w-7">Mois</th>
+      <th class="w-7">H(i)_m</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for value in pvgis.outputs.monthly %}
+    <tr>
+      <td>{{ value.month }}/{{ value.year }}</td>
+      <td>{{ value["H(h)_m"] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

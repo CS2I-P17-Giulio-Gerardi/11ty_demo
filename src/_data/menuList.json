@@ -33,5 +33,10 @@
     "label": "Années",
     "url": "/annee/janvier/",
     "icon": "/images/calendrier.svg"
+  },
+  {
+    "label": "PVGIS",
+    "url": "/pvgis/",
+    "icon": "/images/cellule-photovoltaique.png"
   }
 ]
